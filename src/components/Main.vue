@@ -26,7 +26,7 @@ export default {
   methods:{
     addOne:function () {
       axios.post(
-'http://localhost:8080/Eleven_SSM_JavaServer_war/eleven/add.do',
+'http://192.168.192.129:7001/Eleven_SSM_JavaServer-1.0-SNAPSHOT/eleven/add.do',
           {'p_username':this.p_username}
       ).then(
       response =>{
@@ -41,7 +41,7 @@ export default {
 
     quef:function () {
       axios.post(
-        'http://localhost:8080/Eleven_SSM_JavaServer_war/eleven/que.do',
+        'http://192.168.192.129:7001/Eleven_SSM_JavaServer-1.0-SNAPSHOT/eleven/que.do',
           {'test':'test'}
       ).then(
         respose => {
